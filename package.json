@@ -1,0 +1,42 @@
+{
+  "name": "@syu93/lit-icon",
+  "version": "0.1.0",
+  "description": "LitIcon is a simple Web Component to display an icon from a set of svg icons. Inspired by Polymer iron-icon",
+  "keywords": [
+    "webcomponents",
+    "lit-element",
+    "icons",
+    "iron-icon",
+    "svg"
+  ],
+  "main": "pkg/dist-src/index.js",
+  "module": "pkg/dist-src/index.js",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-standard-pkg": "^0.7.1"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ]
+    ]
+  },
+  "scripts": {
+    "build": "pack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syu93/lit-icon.git"
+  },
+  "author": "syu93",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/syu93/lit-icon/issues"
+  },
+  "homepage": "https://github.com/syu93/lit-icon#readme"
+}
