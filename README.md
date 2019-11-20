@@ -2,6 +2,8 @@
 
 LitIcon is a simple Web Component to display an icon from a set of svg icons. Inspired by Polymer iron-icon
 
+# Important note
+	Before including SVG's path into your application, I recommend you take a look at Jake Archibald SVG OMG, svg minification app to reduce the size of your svg icons.
 
 
 ## Installation
