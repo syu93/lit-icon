@@ -2,8 +2,9 @@
 
 LitIcon is a simple Web Component to display an icon from a set of svg icons. Inspired by Polymer iron-icon
 
-# Important note
-	Before including SVG's path into your application, I recommend you take a look at Jake Archibald SVG OMG, svg minification app to reduce the size of your svg icons.
+## Important note
+
+Before including SVG's path into your application, I recommend you take a look at [Jake Archibald SVG OMG](https://jakearchibald.github.io/svgomg/) SVG minification app to reduce the size of your SVG icons.
 
 
 ## Installation
@@ -21,7 +22,7 @@ And **lit-iconset**, in which we will define our svg icons.
 
 ### Full import
 
-To import all three classes, just import lit-router global package :
+To import all two classes, just import lit-router global package :
 
 ```javascript
 import '@syu93/lit-icon';
