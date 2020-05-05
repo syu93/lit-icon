@@ -1,5 +1,5 @@
-# <lit-icon>
-<lit-icon> is a simple Web Component to display an icon from a set of svg icons. Inspired by Polymer iron-icon.
+# \<lit-icon\>
+\<lit-icon\> is a simple Web Component to display an icon from a set of svg icons. Inspired by Polymer iron-icon.
 
 <div align="center">
 	<a href="https://bundlephobia.com/result?p=lit-icon"><img src="https://badgen.net/bundlephobia/minzip/lit-icon" alt="size"></a>
@@ -11,7 +11,7 @@
 * Dependency free
 * Really small
 
-## Important note
+## Important note
 
 Before including SVG's path into your application, I recommend you take a look at [Jake Archibald SVG OMG](https://jakearchibald.github.io/svgomg/) SVG minification app to reduce the size of your SVG icons.
 
@@ -23,8 +23,8 @@ $ npm i lit-icon
 
 ## Import
 
-The **lit-icon** package comes with 2 custom elements, **<lit-icon>**, which is the element that display an icon.
-And **<lit-iconset>**, in which we will define our SVG icons.
+The **lit-icon** package comes with 2 custom elements, **\<lit-icon\>**, which is the element that display an icon.
+And **\<lit-iconset\>**, in which we will define our SVG icons.
 
 ### Full import
 
@@ -62,16 +62,14 @@ import 'lit-icon/pkg/dist-src/lit-iconset.js';
 
 class MyApp extends LitElement {
   render() {
-  	return html`
-	  <lit-icon icon="add" iconset="iconset"></lit-icon>
-	  <lit-iconset iconset="iconset">
-		<svg>
-		  <defs>
-				<g id="add"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></g>
-		  </defs>
-		</svg>
-	  </lit-iconset>
-	`;
+    return html`
+      <lit-icon icon="add" iconset="iconset"></lit-icon>
+        <lit-iconset iconset="iconset">
+          <svg><defs>
+            <g id="add"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></g>
+          </defs></svg>
+      </lit-iconset>
+    `;
   }
 }
 ```
@@ -82,7 +80,7 @@ class MyApp extends LitElement {
 
 #### Properties
 
-**icon **			`string`		*''*
+**icon**			`string`		*''*
 The **icon** to display
 
 **iconset**		`string`		*'iconset'*
