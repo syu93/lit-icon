@@ -1,5 +1,5 @@
 # \<lit-icon\>
-\<lit-icon\> is a simple Web Component to display an icon from a set of svg icons. Inspired by Polymer iron-icon.
+**\<lit-icon\>** is a simple Web Component to display an icon from a set of SVG icons. Inspired by Polymer iron-icon.
 
 <div align="center">
 	<a href="https://bundlephobia.com/result?p=lit-icon"><img src="https://badgen.net/bundlephobia/minzip/lit-icon" alt="size"></a>
