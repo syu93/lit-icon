@@ -1,7 +1,7 @@
 {
-  "name": "@syu93/lit-icon",
-  "version": "0.1.0",
-  "description": "LitIcon is a simple Web Component to display an icon from a set of svg icons. Inspired by Polymer iron-icon",
+  "name": "lit-icon",
+  "version": "1.0.0",
+  "description": "LitIcon is a simple Web Component to display an icon from a set of svg icons. Inspired by Polymer iron-icon.",
   "keywords": [
     "webcomponents",
     "lit-element",
@@ -11,12 +11,14 @@
   ],
   "main": "pkg/dist-src/index.js",
   "module": "pkg/dist-src/index.js",
-  "dependencies": {
-    "lit-element": "^2.2.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@open-wc/testing": "^2.5.16",
+    "@open-wc/testing-karma": "^3.3.17",
     "@pika/pack": "^0.5.0",
-    "@pika/plugin-standard-pkg": "^0.7.1"
+    "@pika/plugin-standard-pkg": "^0.7.1",
+    "deepmerge": "^4.2.2",
+    "karma": "^4.4.1"
   },
   "@pika/pack": {
     "pipeline": [
@@ -26,8 +28,11 @@
     ]
   },
   "scripts": {
-    "build": "pack build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx pika build",
+    "test": "npx karma start",
+    "test:watch": "karma start --auto-watch=true --single-run=false",
+    "test:update-snapshots": "karma start --update-snapshots",
+    "test:prune-snapshots": "karma start --prune-snapshots"
   },
   "repository": {
     "type": "git",
