@@ -1,7 +1,7 @@
 {
   "name": "lit-icon",
   "version": "1.0.0",
-  "description": "LitIcon is a simple Web Component to display an icon from a set of svg icons. Inspired by Polymer iron-icon.",
+  "description": "LitIcon is a simple Web Component to display an icon from a set of SVG icons. Inspired by Polymer iron-icon.",
   "keywords": [
     "webcomponents",
     "lit-element",
