@@ -56,7 +56,6 @@ describe('LitIcon', () => {
           stroke: none;
           width: 100%;
           height: 100%;
-          display: block;
         }
         i {
           display: flex;
@@ -111,7 +110,6 @@ describe('LitIconset', () => {
           stroke: none;
           width: 100%;
           height: 100%;
-          display: block;
         }
         i {
           display: flex;
