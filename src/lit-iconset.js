@@ -29,12 +29,23 @@ export default class LitIconset extends HTMLElement {
    */
   setIconset() {
     const slot = this.shadowRoot.querySelector('slot');
+    slot.addEventListener('slotchange', () => {
+      const [ svg ] = slot.assignedNodes().filter(node => node.nodeType !== Node.TEXT_NODE);
+      const icons = svg.querySelectorAll('g');
+      if (!icons.length) return false;
+      document.iconMap[this._iconset] = icons;
+      const event = new CustomEvent('ionset-loaded');
+      return window.dispatchEvent(event);
+    });
     const [ svg ] = slot.assignedNodes().filter(node => node.nodeType !== Node.TEXT_NODE);
-    const icons = svg.querySelectorAll('g');
-    if (!icons.length) return false;
-    document.iconMap[this._iconset] = icons;
-    const event = new CustomEvent('ionset-loaded');
-    return window.dispatchEvent(event);
+    // In some case, the slot content is not yet rendered
+    if (svg) {
+      const icons = svg.querySelectorAll('g');
+      if (!icons.length) return false;
+      document.iconMap[this._iconset] = icons;
+      const event = new CustomEvent('ionset-loaded');
+      return window.dispatchEvent(event);
+    }
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
